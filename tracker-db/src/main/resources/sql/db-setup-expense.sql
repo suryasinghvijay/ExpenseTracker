@@ -1,0 +1,21 @@
+/*DROP TABLE IF EXISTS tracker.EXPENSES CASCADE ;
+CREATE TABLE IF NOT EXISTS tracker.EXPENSES (
+   ID SERIAL PRIMARY KEY,
+   UUID VARCHAR (200) NOT NULL
+   DETAILS VARCHAR(50) NOT NULL,
+   AMOUNT NUMBER (200),
+   ACCOUNT VARCHAR(100) NOT NULL,
+   TRANSACTION_TYPE VARCHAR(100) NOT NULL
+);
+COMMENT ON TABLE proman.EXPENSES IS 'Table to capture expenses';
+COMMENT ON COLUMN proman.ROLES.ID IS 'Auto generated PK identifier';
+COMMENT ON COLUMN proman.ROLES.UUID IS 'Unique identifier used as reference by external systems';
+COMMENT ON COLUMN proman.ROLES.DETAILS IS 'expenses details';
+COMMENT ON COLUMN proman.ROLES.AMOUNT IS 'amount spent';
+COMMENT ON COLUMN proman.ROLES.ACCOUNT IS 'Type of account';
+COMMENT ON COLUMN proman.ROLES.TRANSACTION_TYPE IS 'Type of transaction';
+
+
+COMMIT;
+
+*/
